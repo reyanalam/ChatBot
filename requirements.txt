@@ -1,0 +1,11 @@
+pandas
+numpy
+seaborn
+streamlit
+streamlit_chat
+langchain
+sentence_transformers
+openai
+unstructured
+unstructured[local-inference]
+pinecone-client
