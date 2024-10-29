@@ -1,3 +1,4 @@
+![Screenshot (253)](https://github.com/user-attachments/assets/386c5d77-5477-42c8-ad23-b947d45be6f5)
 Project Title: RAG Chatbot Application
 
 Project Description:
@@ -32,5 +33,5 @@ Robust Error Handling:
 Custom exception handling is implemented throughout the application, ensuring that errors during data loading, processing, and querying are logged appropriately, enhancing the application's reliability.
 Conclusion:
 This RAG chatbot application effectively combines cutting-edge NLP techniques and robust data management to create an intelligent conversational agent. By leveraging Langchain for conversation management, Pinecone for vector storage, and Streamlit for the user interface, this project showcases the potential of integrating various technologies to build an advanced chatbot capable of delivering valuable insights and enhancing user interaction.
-![Screenshot (253)](https://github.com/user-attachments/assets/386c5d77-5477-42c8-ad23-b947d45be6f5)
+
 
