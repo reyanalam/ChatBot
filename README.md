@@ -1,37 +1,30 @@
 ![Screenshot (253)](https://github.com/user-attachments/assets/386c5d77-5477-42c8-ad23-b947d45be6f5)
-Project Title: **RAG Chatbot Application**
-
-Project Description:
-
-This project features the development of a Retrieval-Augmented Generation (RAG) chatbot, utilizing Langchain, Pinecone, and Streamlit. The application leverages advanced natural language processing techniques to deliver accurate and contextually relevant responses to user queries.
-
+Project Description: Retrieval-Augmented Generation (RAG) Chatbot
+Overview:
+1)Development of a RAG chatbot using Langchain, Pinecone, and Streamlit.
+2)Utilizes advanced natural language processing for accurate and contextually relevant responses.
 Key Components:
-User Interface with Streamlit:
-
-Built an interactive web application using Streamlit, which allows users to input queries and receive real-time responses. The intuitive interface facilitates smooth interaction, enhancing the user experience.
-Data Ingestion:
-
-Implemented a data_ingestion.py script to load documents from a specified directory. Using Langchain's DirectoryLoader, the application reads text files and prepares them for further processing, logging the status of the loading process.
-Preprocessing of Documents:
-
-The preprocessing.py script is responsible for splitting the loaded documents into manageable chunks using Langchain’s RecursiveCharacterTextSplitter. This segmentation ensures that the documents can be effectively embedded and stored in a vector database.
-Additionally, the script converts text chunks into numerical embeddings using the SentenceTransformer model, allowing for efficient semantic matching and retrieval.
-Embedding Storage with Pinecone:
-
-The application employs Pinecone as a vector database, where the generated embeddings are stored. This setup enables fast and efficient retrieval of relevant information based on user queries.
-Conversation Management:
-
-The chatbot maintains the context of conversations by using Streamlit's session state, allowing users to have continuous dialogues without losing previous interactions.
-The conversation state is managed through the ConversationChain in Langchain, incorporating memory to recall the last few exchanges.
-Query Refinement and Contextual Matching:
-
-A two-step approach for handling user queries is implemented:
-Query Refinement: The query_refiner function uses OpenAI's GPT-3.5 model to formulate more relevant queries based on the conversation history, improving the chances of retrieving accurate information.
-Contextual Matching: The find_match function queries Pinecone to fetch the most relevant text segments corresponding to the refined user input, ensuring the chatbot can provide informed answers.
-Robust Error Handling:
-
-Custom exception handling is implemented throughout the application, ensuring that errors during data loading, processing, and querying are logged appropriately, enhancing the application's reliability.
-Conclusion:
-This RAG chatbot application effectively combines cutting-edge NLP techniques and robust data management to create an intelligent conversational agent. By leveraging Langchain for conversation management, Pinecone for vector storage, and Streamlit for the user interface, this project showcases the potential of integrating various technologies to build an advanced chatbot capable of delivering valuable insights and enhancing user interaction.
-
+1)User Interface with Streamlit:
+  1.1)Interactive web application for user queries and real-time responses.
+  1.2)Intuitive design enhances user experience.
+2)Data Ingestion:
+  2.1)Implemented data_ingestion.py to load documents from a specified directory.
+  2.2)Uses Langchain's DirectoryLoader for reading text files and logging loading status.
+3)Preprocessing of Documents:
+  3.1)preprocessing.py splits documents into manageable chunks using Langchain’s RecursiveCharacterTextSplitter.
+  3.2)Converts text chunks into numerical embeddings with the SentenceTransformer model for semantic matching.
+4)Embedding Storage with Pinecone:
+  4.1)Pinecone serves as a vector database for storing generated embeddings.
+  4.2)Facilitates fast retrieval of relevant information based on user queries.
+5)Conversation Management:
+  5.1)Maintains conversation context using Streamlit's session state.
+  5.2)Uses Langchain’s ConversationChain to manage dialogue history and memory.
+6)Query Refinement and Contextual Matching:
+  6.1)Query Refinement: query_refiner function utilizes OpenAI's GPT-3.5 model to enhance query relevance.
+  6.2)Contextual Matching: find_match function fetches relevant text segments from Pinecone based on refined user input.
+7)Robust Error Handling:
+  7.1)Custom exception handling logs errors during data loading, processing, and querying for improved reliability.
+8)Conclusion:
+  8.1)This RAG chatbot combines NLP techniques and data management to create an intelligent conversational agent.
+  8.2)Integrates Langchain for conversation management, Pinecone for vector storage, and Streamlit for the user interface, showcasing the potential of advanced chatbot development
 
