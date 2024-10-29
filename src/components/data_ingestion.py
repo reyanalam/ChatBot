@@ -14,8 +14,5 @@ try:
 
     documents = load_docs(directory, file_type="txt")
 except Exception as e:
-<<<<<<< HEAD
     raise CustomeExceptionClass(e,sys)
-=======
-            raise CustomeExceptionClass(e,sys)
->>>>>>> 707750bd44022204c9b456671eb1e98c236be02b
+
