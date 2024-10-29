@@ -25,9 +25,17 @@ except Exception as e:
 
 try:
     logging.info('storing embeddings in Pinecone')
+<<<<<<< HEAD
     pinecone_api_key = ""
     pc = pinecone.Pinecone(api_key=pinecone_api_key)
     index_name = "chatbot"
     index = pc.from_documents(docs, embeddings, index_name=index_name)
+=======
+    pinecone.init(
+    api_key="6daa34e9-851b-4dbd-b804-74712f92f693" 
+    )
+    index_name = "chatbot"
+    index = Pinecone.from_documents(docs, embeddings, index_name=index_name)
+>>>>>>> 707750bd44022204c9b456671eb1e98c236be02b
 except Exception as e:
             raise CustomeExceptionClass(e,sys)
