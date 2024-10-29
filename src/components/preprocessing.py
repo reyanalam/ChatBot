@@ -15,7 +15,6 @@ try:
         return docs
 
     docs = split_docs(documents)
-    print(len(docs))
 except Exception as e:
             raise CustomeExceptionClass(e,sys)
 try:
@@ -27,10 +26,9 @@ except Exception as e:
 try:
     logging.info('storing embeddings in Pinecone')
     pinecone.init(
-    api_key="",  # find at app.pinecone.io
-    environment="us-east-1-aws"  # next to api key in console
+    api_key="6daa34e9-851b-4dbd-b804-74712f92f693" 
     )
-    index_name = "langchain-chatbot"
+    index_name = "chatbot"
     index = Pinecone.from_documents(docs, embeddings, index_name=index_name)
 except Exception as e:
             raise CustomeExceptionClass(e,sys)
