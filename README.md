@@ -1,5 +1,5 @@
 ![Screenshot (253)](https://github.com/user-attachments/assets/386c5d77-5477-42c8-ad23-b947d45be6f5)
-Project Title: RAG Chatbot Application
+Project Title: **RAG Chatbot Application**
 
 Project Description:
 
