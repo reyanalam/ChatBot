@@ -12,12 +12,8 @@ This project involves the development of a **Retrieval-Augmented Generation (RAG
 - Interactive web application for user queries and real-time responses.
 - The interface is intuitive, enhancing the user experience.
 
-### 2. **Data Ingestion**
-- Implemented `data_ingestion.py` to load documents from a specified directory.
-- Uses **Langchain's DirectoryLoader** for reading text files and logging the loading status.
-
-### 3. **Preprocessing of Documents**
-- `preprocessing.py` splits documents into manageable chunks using **Langchain’s RecursiveCharacterTextSplitter**.
+### 2. **Preprocessing of Documents**
+- Splits documents into manageable chunks using .
 - Converts text chunks into numerical embeddings using **SentenceTransformer** for semantic matching.
 
 ### 4. **Embedding Storage with Pinecone**
