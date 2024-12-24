@@ -1,0 +1,14 @@
+pandas
+numpy
+seaborn
+streamlit
+streamlit_chat
+langchain
+sentence_transformers
+openai==0.28
+unstructured
+unstructured[local-inference]
+pinecone-client
+python-dotenv
+PyPDF2
+langchain-community
