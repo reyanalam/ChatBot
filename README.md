@@ -48,5 +48,27 @@ This **RAG Chatbot** combines advanced **NLP techniques** and efficient **data m
    ```bash
    git clone https://github.com/yourusername/rag-chatbot.git
 
+2. Install all the dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. Run the main program:
+   ```bash
+   python run main.py
+
+4. Run the app.py file:
+   ```bash
+   streamlit run app.py
+
+Ask questions from the ChatBot
+
+## Contact
+
+1. **Linkedin:** https://www.linkedin.com/in/reyanalam/
+2. **Gmail:** reyanalam115@gmail.com
+
+
+
+
 
 
